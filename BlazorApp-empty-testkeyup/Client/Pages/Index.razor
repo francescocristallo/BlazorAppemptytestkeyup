@@ -1,0 +1,10 @@
+﻿@page "/"
+
+<h1>Type to see if char is recognized</h1>
+
+<input @onkeyup="@((e)=> KeyEvent(e))" />
+
+@foreach (var l in Logs)
+{
+   <p>- @l</p>
+}
